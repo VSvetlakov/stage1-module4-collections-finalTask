@@ -18,7 +18,7 @@ public class MapFromKeysCreator {
             if (setMap.containsKey(lengthKey)){
                 setMap.get(lengthKey).add(key);
             }else {
-                Set<String> strings = new HashSet<String>();
+                Set<String> strings = new HashSet<>();
                 strings.add(key);
                 setMap.put(lengthKey,strings);
             }

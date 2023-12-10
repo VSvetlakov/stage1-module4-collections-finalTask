@@ -18,12 +18,12 @@ public class DeveloperProjectFinder {
             }
         }
 
-        Collections.sort(strings, new ProjectComparator());
+        strings.sort(new ProjectComparator());
 
         return strings;
     }
 
-    class ProjectComparator implements Comparator<String>{
+    static class ProjectComparator implements Comparator<String>{
 
         @Override
         public int compare(String o1, String o2) {
